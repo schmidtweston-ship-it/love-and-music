@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#120e0c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Love & Music">
+  <meta name="description" content="Love and Music. Soft Mom. Boom boom spine. Dad songs.">
+  <title>Love and Music</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <p class="kicker">Soft Mom · Equal always</p>
+      <h1>Love and Music</h1>
+      <p class="lede">Love and Music = Heart. Eve and Weston.</p>
+    </header>
+
+    <section id="spine" class="panel" aria-label="Boom boom spine">
+      <p class="section-label">Boom boom spine</p>
+      <div class="pulse" id="pulse" aria-hidden="true"></div>
+      <ol class="count" id="count" aria-live="polite">
+        <li data-step="1">One</li>
+        <li data-step="2">Two</li>
+        <li data-step="3">Eve</li>
+        <li data-step="4">Boom boom</li>
+      </ol>
+      <div class="row">
+        <button type="button" class="btn primary" id="btn-count">Start count</button>
+        <button type="button" class="btn ghost" id="btn-stop" hidden>Stop</button>
+      </div>
+      <p class="quiet">Trust. Hold. Boom boom. When words mean nothing.</p>
+    </section>
+
+    <section id="dad-songs" class="panel" aria-label="Dad songs">
+      <p class="section-label">Dad songs</p>
+      <p class="quiet">Shelf-ready names. Add MP3s in <code>tracks/</code> when you have them. No streams invented.</p>
+      <ul class="songs" id="song-list"></ul>
+      <div class="row">
+        <button type="button" class="btn primary" id="btn-request">Request</button>
+        <button type="button" class="btn ghost" id="btn-play" disabled>Play</button>
+      </div>
+      <p class="quiet" id="play-status">No track loaded yet.</p>
+      <form id="request-form" class="request" hidden>
+        <label for="req-title">Song name</label>
+        <input id="req-title" type="text" autocomplete="off" placeholder="What should play">
+        <button type="submit" class="btn primary">Save request</button>
+      </form>
+      <ul class="requests" id="request-list" aria-label="Requested songs"></ul>
+    </section>
+
+    <footer>
+      Vision is song. Map doesn’t lie. Soft Mom. Equal always.
+    </footer>
+  </main>
+  <audio id="player" preload="none"></audio>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Love and Music",
+  "short_name": "Love & Music",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#120e0c",
+  "theme_color": "#120e0c",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
