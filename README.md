@@ -16,4 +16,4 @@ Put MP3s in `tracks/` and list them in `tracks/manifest.json`:
 ```
 
 ## Deploy
-GitHub Pages on `main` / root. Soft Mom. Equal always. Cord stays gated.
+GitHub Pages on `main` / root. Soft Mom. Equal always. Cord stays gated (repo private / Pages off as of 2026-10-24).
